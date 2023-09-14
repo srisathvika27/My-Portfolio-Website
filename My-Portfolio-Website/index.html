@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1297f712ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/sathvii.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>FullStack Developer</p>
+            <h1>Hi there, I'm <br><span>Maringanti Sri Sathvika</span><br></h1>
+        </div>
+    </div>
+</div>
+<!-- ----------------------about-------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pic.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am a Full-Stack developer based in Hyderabad, India, with a background in Information Technology. I pursued my undergraduate studies at VMTW. My passion lies in enhancing my coding skills and creating applications and websites. I specialize in building WebApps and Websites using the MERN Stack. Currently, I am focused on self-improvement and honing my skills. I thoroughly enjoy building Full-Stack clones.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Designing Web App Interfaces using HTML, CSS, PHP, React, Node.js</li>
+                        <li><span>Languages</span><br>Python, Java, C, JavaScript</li>
+                        <li><span>Database Management</span><br>MongoDB, MySQL</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Intern - PERT  Smart home automation </span><br>Product testing in manufacturing processes for PCBA components (Inspection, SMT Process, Washing,PCBA Testing). 
+                            Mar 2021 - May 2021 · 3 mos.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Bachelor of Science in Information technology</li>
+                        <li><span>2021</span><br>Diploma in Electronics and Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<!-- --------------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg" >
+                <div class="layer">
+                    <h3>To-Do List Application</h3>
+                    <p>Developed a dynamic and user-friendly To-Do List application using Node.js and MongoDB. The project aimed to help users organize and manage their tasks efficiently. Leveraging the power of server-side scripting with Node.js and the flexibility of NoSQL database MongoDB, the application provided seamless task management capabilities.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg" >
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>Designed and developed a personalized and responsive portfolio website to showcase my skills, projects, and professional experience. The website served as a digital showcase of my work, presenting my capabilities to potential employers and clients in an interactive and visually appealing manner.</p>
+                    <a href="https://github.com/Shalemkodali/My-Portfolio-Website.git"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg" >
+                <div class="layer">
+                    <h3>Netflix Clone</h3>
+                    <p>Developed a Netflix clone web application using HTML and CSS, replicating the popular streaming platform's user interface and design. The project aimed to showcase my front-end development skills while providing a user-friendly experience similar to the original Netflix website.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- ---------------------Education------------ -->
+<div id="education">
+    <div class="container">
+        <h1 class="sub-title">Education</h1>
+        <div class="education-list">
+            <div>
+                <i class="fa-solid fa-graduation-cap"></i>                
+                <h2>Bachelor of technology</h2>
+                <h4>Information Technology(Expected Graduation: Apr, 2024)</h4>
+                <p>-Vignan's Institute of Management and Technology For women's(VMTW), Ghatkesar, Medchal Dist.</p>
+                <a href="http://www.vmtw.in/">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-building-columns"></i>                
+                <h2>Diploma</h2>
+                <h4>Electronics and Communication (2018-21)</h4>
+                <p>Govt. Polytechnic, Badangpet, RR.Dist.</p>
+                <a href="https://sbtet.telangana.gov.in/index.html#!/index">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fas fa-paper-plane"></i>maringantisathvika@gmail.com</p>
+                <p> <i class="fas fa-phone-square-alt"></i>+91 7981636736</p>
+                <div class="social-icons">
+                    <a href="https:github.com"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sathvika-maringanti-951643229/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https:instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https:twitter.com"><i class="fab fa-twitter"></i></a>
+
+                </div>
+                <a href="images/cv.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name">
+                <input type="text" name="Email" placeholder="Your Email">
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @Maringanti Sri Sathvika. Made with <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbygAJfmRv8Jdvb1aOYDqfMnHg8alM1hXVlVjt0eFpeTAUha7nUp3b22mEDfTOZZYUvhpQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
